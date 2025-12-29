@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НИИХУА</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
             </div>
             <nav class="menu-nav">
                 <a href="characters.html" class="menu-link">Персонажи</a>
-                <a href="#map" class="menu-link">Карта</a>
+                <a href="index.html#map" class="menu-link">Карта</a>
                 <a href="institute.html" class="menu-link">Об институте</a>
             </nav>
         </div>
@@ -69,7 +69,33 @@
             <p class="screen-2-text" id="text1" data-full-text="Сегодня институт работает в праздничном режиме <strong>катастрофы</strong>."></p>
             <p class="screen-2-text" id="text2" data-full-text="У вашей команды есть три часа, чтобы предотвратить неминуемое."></p>
         </div>
+        <div class="scroll-indicator" onclick="scrollToVideo()">
+            <div class="arrow-down"></div>
+        </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- Screen 3: Video -->
+    <section class="screen screen-3" id="screen-3">
+        <div class="video-container">
+            <h2 class="video-title">Приключение начинается...</h2>
+            <div class="video-wrapper">
+                <iframe id="youtube-player" width="100%" height="100%" 
+                    src="https://www.youtube.com/embed/jGy5ZJ8cSUE?enablejsapi=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 4: Map -->
+    <section class="screen screen-4" id="map">
+        <div class="map-container">
+            <img src="map.jpg" alt="Карта НИИХУА" class="map-image">
+        </div>
+    </section>
+    <script src="script.js?v=2"></script>
 </body>
 </html>

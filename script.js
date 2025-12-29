@@ -2,12 +2,58 @@
 function scrollToNext() {
     const nextScreen = document.getElementById('screen-2');
     if (nextScreen) {
-        nextScreen.scrollIntoView({ 
+        nextScreen.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
     }
 }
+
+function scrollToVideo() {
+    const videoScreen = document.getElementById('screen-3');
+    if (videoScreen) {
+        videoScreen.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// Smooth scroll for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if there's a hash in URL on page load
+    if (window.location.hash) {
+        setTimeout(() => {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }, 100);
+    }
+    
+    // Handle clicks on menu links with anchors
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href.includes('#')) {
+                const hashPart = href.split('#')[1];
+                const targetElement = document.getElementById(hashPart);
+                
+                // Only handle if target is on current page
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+});
 
 // Анимация печатной машинки
 function typeWriter(element, text, speed = 50, callback) {

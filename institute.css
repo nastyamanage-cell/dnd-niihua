@@ -60,13 +60,13 @@
 
 .races-section {
     min-height: 100vh;
-    padding: 120px 40px 60px;
+    padding: 120px 40px 40px;
     background-color: var(--deep-midnight);
 }
 
 .races-header {
     max-width: 1200px;
-    margin: 0 auto 60px;
+    margin: 0 auto 30px;
     text-align: center;
 }
 
@@ -94,8 +94,8 @@
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .race-card {
@@ -116,7 +116,7 @@
 
 .race-image-wrapper {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     position: relative;
 }
@@ -124,7 +124,8 @@
 .race-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     filter: grayscale(30%) contrast(1.1);
     transition: transform 0.3s ease;
 }
@@ -134,7 +135,7 @@
 }
 
 .race-content {
-    padding: 30px;
+    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -153,17 +154,17 @@
 
 .race-description {
     font-family: 'Space Mono', 'IBM Plex Mono', 'Courier New', monospace;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    line-height: 1.7;
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+    line-height: 1.5;
     color: var(--cold-white);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     opacity: 0.9;
 }
 
 .race-note {
     font-family: 'Space Mono', 'IBM Plex Mono', 'Courier New', monospace;
-    font-size: clamp(0.85rem, 2vw, 0.95rem);
-    line-height: 1.6;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    line-height: 1.4;
     color: var(--aurora-teal);
     font-style: italic;
     margin-bottom: 25px;
@@ -282,13 +283,13 @@
 /* Секция отделов */
 .departments-section {
     min-height: 100vh;
-    padding: 80px 40px 60px;
+    padding: 60px 40px 40px;
     background: linear-gradient(180deg, var(--deep-midnight) 0%, #0d0d0d 100%);
 }
 
 .departments-header {
     max-width: 1200px;
-    margin: 0 auto 60px;
+    margin: 0 auto 30px;
     text-align: center;
 }
 
@@ -307,15 +308,15 @@
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .department-card {
     background: rgba(27, 42, 65, 0.4);
     border: 2px solid var(--aurora-teal);
     border-radius: 15px;
-    padding: 35px;
+    padding: 25px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -328,9 +329,9 @@
 }
 
 .department-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     filter: drop-shadow(0 0 10px rgba(72, 201, 176, 0.5));
 }
 
