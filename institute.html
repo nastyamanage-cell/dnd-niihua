@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об институте - НИИХУА</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="institute.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700;900&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-menu">
+        <div class="menu-container">
+            <div class="logo-section">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="icon.jpg" alt="НИИХУА" class="logo-icon">
+                    <span class="logo-text">НИИХУА</span>
+                </a>
+            </div>
+            <nav class="menu-nav">
+                <a href="index.html#personages" class="menu-link">Персонажи</a>
+                <a href="index.html#map" class="menu-link">Карта</a>
+                <a href="institute.html" class="menu-link">Об институте</a>
+            </nav>
+        </div>
+    </header>
+    
+    <nav class="page-nav">
+        <div class="page-nav-container">
+            <a href="#races" class="page-nav-link">Расы</a>
+            <span class="page-nav-divider">|</span>
+            <a href="#departments" class="page-nav-link">Профессии</a>
+        </div>
+    </nav>
+    
+    <section class="races-section" id="races">
+        <div class="races-header">
+            <h1 class="races-title">Сотрудники всех рас и происхождений</h1>
+            <p class="races-subtitle">Для НИИХУА разнообразие и равноправие это не просто слова. В Институте трудятся сообща сотрудники самых разных рас и народностей вместе создавая вклад в развитие алхимии.</p>
+        </div>
+        
+        <div class="races-grid">
+            <!-- Люди -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="Люди" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Люди</h2>
+                    <p class="race-description">Люди — самая многочисленная и самая непредсказуемая раса института. Они не обладают врождённой магической специализацией, зато отличаются выдающейся способностью привыкать к чему угодно — от нестабильных экспериментов до отсутствия внятных инструкций.</p>
+                    <p class="race-description">Люди быстро осваиваются в любой роли, легко меняют специализацию и часто работают в НИИХУА «временно», не замечая, как проходят годы. Они одинаково уверенно чувствуют себя и в лаборатории, и в коридорах власти, и в ситуациях, где никто не понимает, что происходит.</p>
+                    <p class="race-note">Считается, что именно люди лучше всех умеют делать вид, что всё под контролем, даже когда это явно не так.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●●○○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карлики -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" alt="Карлики" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Карлики</h2>
+                    <p class="race-description">Карлики — коренастая, выносливая раса с врождённой тягой к порядку, учёту и структурам. Они ценят стабильность, ясные правила и точные формулировки. В НИИХУА карлики традиционно занимают позиции, связанные с бухгалтерией, учётом ресурсов, инфраструктурой и системным управлением.</p>
+                    <p class="race-description">Карлики плохо переносят хаос и импровизацию, но отлично работают в долгую. Они помнят старые решения, архивные договорённости и могут восстановить цепочку событий по обрывкам документов.</p>
+                    <p class="race-note">Карлики редко повышают голос, но способны годами помнить допущенную несправедливость — особенно если она была плохо задокументирована.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●○○○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●●○</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●○○○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Хрономорфы -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Хрономорфы" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Хрономорфы</h2>
+                    <p class="race-description">Хрономорфы — раса, существующая с постоянным временным смещением. Они могут находиться на несколько минут, часов или даже дней впереди или позади текущего момента. Это не делает их пророками, но создаёт странный эффект: хрономорфы иногда знают, что произойдёт, не понимая, почему.</p>
+                    <p class="race-description">В НИИХУА хрономорфы часто работают с планированием, прогнозами и экспериментами, связанными со временем. Их отношения с дедлайнами сложны: они могут быть выполнены заранее или уже считаться просроченными ещё до начала работы.</p>
+                    <p class="race-note">Общение с хрономорфами иногда сбивает с толку — они могут ссылаться на события, которые ещё не случились, или забывать то, что для остальных только что произошло.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●●●</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●○○○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Эльварды -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" alt="Эльварды" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Эльварды</h2>
+                    <p class="race-description">Эльварды — высокая, стройная раса с утончёнными чертами и врождённой склонностью к абстрактному мышлению. Их можно узнать по спокойной манере поведения, внимательному взгляду и привычке говорить меньше, чем они знают.</p>
+                    <p class="race-description">Исторически эльварды связаны с академическими традициями, теорией и методологией. В НИИХУА они занимают позиции исследователей, аналитиков и разработчиков концепций. Именно они чаще всего формулируют «правильные» подходы, которые потом годами пытаются применить на практике.</p>
+                    <p class="race-note">Эльварды ценят чистоту идей и часто испытывают трудности, сталкиваясь с реальностью института, где компромиссы неизбежны, а идеальные модели редко работают без доработок.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●○○○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●●●</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●●●○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Оркари -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Оркари" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Оркари</h2>
+                    <p class="race-description">Оркари — крупная, физически мощная раса с клыками и внушительным телосложением. Несмотря на устрашающий внешний вид, оркари в НИИХУА известны как надёжные, дисциплинированные и практичные сотрудники.</p>
+                    <p class="race-description">Они предпочитают простые, проверенные решения и не любят лишней теории. Оркари часто работают в зонах повышенного риска: охрана, стабилизация экспериментов, обслуживание опасного оборудования. Если что-то нужно удержать, перенести или остановить — зовут оркаров.</p>
+                    <p class="race-note">Оркари не склонны к долгим рассуждениям, но обладают развитым чувством ответственности и чётко различают, что «работает», а что нет.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●●●●●</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●○○○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Рептилоиды -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Рептилоиды" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Рептилоиды</h2>
+                    <p class="race-description">Рептилоиды — чешуйчатая, хладнокровная раса с вертикальными зрачками и спокойной, почти отстранённой манерой общения. Они живут значительно дольше большинства других рас и привыкли мыслить в масштабах десятилетий и столетий.</p>
+                    <p class="race-description">В НИИХУА рептилоиды традиционно занимают позиции, связанные с архивами, аудитом, контролем соответствия и долгосрочным планированием. Они ценят регламенты, процедуры и устойчивые системы, которые не зависят от личных амбиций.</p>
+                    <p class="race-note">Рептилоиды редко проявляют эмоции и почти никогда не торопятся. Их фраза «это уже происходило» обычно означает, что стоит отнестись к ситуации серьёзно.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●○○○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●●○</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●●○○</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Гоблиноиды -->
+            <div class="race-card">
+                <div class="race-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Гоблиноиды" class="race-image">
+                </div>
+                <div class="race-content">
+                    <h2 class="race-name">Гоблиноиды</h2>
+                    <p class="race-description">Гоблиноиды — невысокая, суетливая и крайне изобретательная раса. Их легко узнать по постоянному движению, испачканным рукам и склонности разбирать и собирать любые механизмы поблизости.</p>
+                    <p class="race-description">В НИИХУА гоблиноиды работают техниками, инженерами и младшими специалистами. Именно они чаще всего придумывают решения «на коленке», которые внезапно оказываются самыми живучими. Их изобретения не всегда выглядят аккуратно, но обычно выполняют свою функцию.</p>
+                    <p class="race-note">Гоблиноиды не любят, когда их просят «сделать красиво». Они предпочитают, чтобы всё просто работало — желательно прямо сейчас.</p>
+                    <div class="race-stats">
+                        <div class="stat"><span class="stat-label">Сила:</span> <span class="stat-value">●○○○○</span></div>
+                        <div class="stat"><span class="stat-label">Ловкость:</span> <span class="stat-value">●●●●○</span></div>
+                        <div class="stat"><span class="stat-label">Интеллект:</span> <span class="stat-value">●●●○○</span></div>
+                        <div class="stat"><span class="stat-label">Харизма:</span> <span class="stat-value">●●○○○</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="departments-section" id="departments">
+        <div class="departments-header">
+            <h1 class="departments-title">Отделы НИИХУА</h1>
+        </div>
+        
+        <div class="departments-grid">
+            <!-- Отдел Нестабильных Экспериментов -->
+            <div class="department-card">
+                <div class="department-icon">⚗️</div>
+                <h2 class="department-name">Отдел Нестабильных Экспериментов</h2>
+                <p class="department-description">Отдел занимается исследованиями, результат которых невозможно заранее предсказать, но невозможно не попробовать. Здесь тестируют новые формулы, смешивают несовместимое и регулярно превышают допустимые нормы магической активности.</p>
+                <p class="department-description">Эксперименты отдела часто выходят из-под контроля, но именно отсюда выходят самые громкие открытия НИИХУА. В праздничные дни отдел официально закрыт, но по факту — никогда.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-icon">🎲</span>
+                        <span class="ability-title">Способность: «Форсировать реакцию»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может мгновенно ускорить любой магический или технический процесс, игнорируя подготовку и требования безопасности.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> автоматически считается успехом любое действие, связанное с экспериментом, магией или нестабильным объектом; можно превратить провал в успех</p>
+                        <p><strong>Цена:</strong> мастер добавляет побочный эффект (не сейчас, а позже); эффект будет странным, неудобным или опасным, но не смертельным</p>
+                    </div>
+                    <p class="ability-quote">«Да, это сработало. Вопрос — что именно.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Теоретической Алхимии и Методологии -->
+            <div class="department-card">
+                <div class="department-icon">📐</div>
+                <h2 class="department-name">Отдел Теоретической Алхимии и Методологии</h2>
+                <p class="department-description">Этот отдел отвечает за модели, теории, формулы и объяснения того, что делают остальные. Сотрудники отдела уверены, что если что-то нельзя корректно описать, то этого либо не существует, либо это временно.</p>
+                <p class="department-description">Методологии отдела редко совпадают с практикой, но без них невозможно отчитаться перед Советом Архимагов.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «По расчётам это невозможно»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может отменить или переписать эффект, доказав, что он не должен существовать.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> отменяет магический эффект, существо или аномалию; или снижает сложность сложного действия до минимума</p>
+                        <p><strong>Условие:</strong> игрок обязан логически или псевдонаучно объяснить, почему это не может работать</p>
+                        <p><strong>Ограничение:</strong> не работает на чистый хаос или эмоции</p>
+                    </div>
+                    <p class="ability-quote">«Если следовать формуле, этого просто не произошло.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Регламентов, Форм и Согласований -->
+            <div class="department-card">
+                <div class="department-icon">📋</div>
+                <h2 class="department-name">Отдел Регламентов, Форм и Согласований</h2>
+                <p class="department-description">Самый влиятельный и самый ненавидимый отдел института. Здесь разрабатывают формы, процедуры, протоколы и правила, которые позволяют НИИХУА существовать в правовом поле магического мира.</p>
+                <p class="department-description">Любое действие без согласования считается нарушением. Любое согласование — приключением.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «Временно разрешено»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может узаконить любое действие, даже запрещённое или абсурдное.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> любое действие считается официально допустимым; проверяющие и системы принимают его как норму</p>
+                        <p><strong>Цена:</strong> требуется оформить «временный протокол»; позже кто-то потребует отчёт или объяснение</p>
+                    </div>
+                    <p class="ability-quote">«Это не нарушение. Это исключение.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Артефактов и Инженерных Систем -->
+            <div class="department-card">
+                <div class="department-icon">🔧</div>
+                <h2 class="department-name">Отдел Артефактов и Инженерных Систем</h2>
+                <p class="department-description">Отдел обслуживает, чинит и модернизирует древние и современные магические устройства института. Никто точно не знает, как работают некоторые артефакты, но этот отдел знает, что с ними делать, когда они перестают работать.</p>
+                <p class="department-description">Сотрудники отдела считают, что главная проблема НИИХУА — пользователи.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «Заставить работать»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может запустить или починить любой артефакт, даже если никто не знает, как он устроен.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> объект работает ровно так, как нужно в моменте; можно игнорировать поломки и несовместимость</p>
+                        <p><strong>Ограничение:</strong> эффект временный; после сцены объект снова нестабилен или требует внимания</p>
+                    </div>
+                    <p class="ability-quote">«Не спрашивайте как. Просто не трогайте.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Коммуникаций и Взаимодействия с Сущностями -->
+            <div class="department-card">
+                <div class="department-icon">💬</div>
+                <h2 class="department-name">Отдел Коммуникаций и Взаимодействия с Сущностями</h2>
+                <p class="department-description">Отдел отвечает за переговоры: с магическими существами, с разумными экспериментами, с проверяющими, иногда — с самими зданиями.</p>
+                <p class="department-description">Здесь решают проблемы словами, интонациями и правильно подобранными обещаниями.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «Давайте поговорим»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может перевести любой конфликт в диалог, даже если это: агрессивное существо, враждебная система, проверяющий.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> бой, проверка или конфликт временно останавливается; появляется возможность договориться или сменить условия</p>
+                        <p><strong>Условие:</strong> договор всегда обязывает обе стороны; мастер вправе потребовать услугу взамен</p>
+                    </div>
+                    <p class="ability-quote">«Он не злой. Он просто выполняет свою функцию.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Прогнозирования и Контроля Последствий -->
+            <div class="department-card">
+                <div class="department-icon">🔮</div>
+                <h2 class="department-name">Отдел Прогнозирования и Контроля Последствий</h2>
+                <p class="department-description">Отдел занимается оценкой рисков, предсказанием последствий и подготовкой планов «на случай если». Именно здесь хранятся сценарии катастроф, которые, к сожалению, регулярно оказываются актуальными.</p>
+                <p class="department-description">Отдел редко бывает услышан до тех пор, пока не становится поздно.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «Мы это уже просчитывали»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может предсказать ближайшее развитие ситуации.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> мастер обязан честно рассказать: что случится при успехе; что случится при провале; игроки могут изменить решение после этого</p>
+                        <p><strong>Ограничение:</strong> не даёт идеального исхода; только ясность последствий</p>
+                    </div>
+                    <p class="ability-quote">«Плохая новость — это не худший сценарий.»</p>
+                </div>
+            </div>
+            
+            <!-- Отдел Полевых Испытаний и Экстренного Реагирования -->
+            <div class="department-card">
+                <div class="department-icon">🚨</div>
+                <h2 class="department-name">Отдел Полевых Испытаний и Экстренного Реагирования</h2>
+                <p class="department-description">Этот отдел выезжает туда, где уже что-то пошло не так. Он отвечает за локализацию последствий, эвакуацию персонала и временные решения, которые потом почему-то становятся постоянными.</p>
+                <p class="department-description">Сотрудники отдела первыми сталкиваются с проблемами и последними уходят домой.</p>
+                <div class="department-ability">
+                    <div class="ability-header">
+                        <span class="ability-title">Способность: «Локализовать»</span>
+                    </div>
+                    <p class="ability-text">Руководитель может сдержать любую катастрофу, не решая её полностью.</p>
+                    <div class="ability-details">
+                        <p><strong>Эффект:</strong> взрыв, прорыв, паника, проверка — останавливаются; ущерб минимизируется; появляется время подумать</p>
+                        <p><strong>Цена:</strong> ситуация никуда не исчезает; её придётся решать позже или обходить</p>
+                    </div>
+                    <p class="ability-quote">«Живы? Отлично. Работаем дальше.»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="institute.js"></script>
+</body>
+</html>
+

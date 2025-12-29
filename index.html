@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НИИХУА</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-menu">
+        <div class="menu-container">
+            <div class="logo-section">
+                <img src="icon.jpg" alt="НИИХУА" class="logo-icon">
+                <span class="logo-text">НИИХУА</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="#personages" class="menu-link">Персонажи</a>
+                <a href="#map" class="menu-link">Карта</a>
+                <a href="institute.html" class="menu-link">Об институте</a>
+            </nav>
+        </div>
+    </header>
+    <section class="screen screen-1">
+        <div class="dossier-container">
+            <div class="photo-container">
+                <div class="photo-wrapper">
+                    <img src="first.jpg" alt="НИИХУА" class="building-photo">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title-wrapper">
+                    <span class="title-back">НИИХУА</span>
+                    <h1 class="title">Научно Исследовательский Институт Хитроумной Алхимии</h1>
+                </div>
+                <p class="subtitle">Рождественское приключение хитро<del>жопой</del>-умной компании</p>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToNext()">
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+    
+    <section class="screen screen-2" id="screen-2">
+        <div class="garland">
+            <div class="garland-wire"></div>
+            <div class="lights">
+                <span class="light light-1"></span>
+                <span class="light light-2"></span>
+                <span class="light light-3"></span>
+                <span class="light light-4"></span>
+                <span class="light light-5"></span>
+                <span class="light light-1"></span>
+                <span class="light light-2"></span>
+                <span class="light light-3"></span>
+                <span class="light light-4"></span>
+                <span class="light light-5"></span>
+                <span class="light light-1"></span>
+                <span class="light light-2"></span>
+                <span class="light light-3"></span>
+                <span class="light light-4"></span>
+                <span class="light light-5"></span>
+            </div>
+        </div>
+        <div class="screen-2-content">
+            <h2 class="screen-2-title">С Новым Годом!</h2>
+            <p class="screen-2-text" id="text1" data-full-text="Сегодня институт работает в праздничном режиме <strong>катастрофы</strong>."></p>
+            <p class="screen-2-text" id="text2" data-full-text="У вашей команды есть три часа, чтобы предотвратить неминуемое."></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
