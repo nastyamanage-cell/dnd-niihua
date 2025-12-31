@@ -173,9 +173,10 @@
 
 .race-image-wrapper {
     width: 100%;
-    height: 200px;
+    height: 320px;
     overflow: hidden;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .race-image {
